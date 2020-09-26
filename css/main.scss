@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+$navColor: #8e1616;
+$lightColor: #fff3f3;
+$sweetGreen: #339235;
+$coolGrey: #cecece;
+$white: #fff;
+$blacky: #171717;
+$hoverColor: #a89a9a;
+$checkMark: #90d3d5;
+$tablet: 768px;
+
+
+ /*Global Starts*/
+ a {
+     text-decoration: none;
+     color: $white;
+ }
+ a:hover {
+     color: $hoverColor;
+     transition: all .5s ease-in-out;
+ }
+
+ li {
+    list-style: none;
+ }
+
+ label{
+     letter-spacing: -0.5px;
+     font-weight: bold;
+ }
+ /*Global Ends*/
+
+.logo-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: $lightColor;
+    padding: 1.5em 1.5em;
+    .logoBan {
+        img {
+            @media only screen and (max-width: $tablet) {
+                display: none;
+            }
+        }
+    }
+}
+
+.mainNav {
+    background-color: $navColor;
+    .navItems {
+        display: flex;
+        list-style: none;
+        padding: .3em 1.2em;
+        li {
+            margin: 0 1em;
+            font-size: 1.2em;
+        }
+    }
+}
+/*End of mainHeader and navbar*/
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+    @media only screen and (max-width: $tablet) {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .mainContent {
+        background-image: url("../img/traffic-332857_1920.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: 66vh;
+        position: relative;
+        #carInsurance{
+            color: $white;
+            font-size: 2.5em;
+            padding: 1em 0 .5em 1em;
+        }
+        .innerContent {
+            margin: auto;
+            width: 90%;
+            height: 85%;
+            position: absolute;
+            top: 6.25em;
+            right: 5%;
+            border: 0.020em solid rgb(63, 59, 59);
+            box-shadow: 2px 2px 2px black;
+            background:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+            @media only screen and (max-width: $tablet) {
+                top: 130px;
+                right: 5%;
+            }
+            .inputSection2 {
+                
+            }
+            #quote {
+                font-size: 2.5em;
+                text-align: center;
+                @media only screen and (max-width: $tablet) {
+                    font-size: 1.5em;
+                    margin-top: 1.3em;
+                }
+            }
+            .inputSection {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-around;
+                margin-top: 1em;
+                
+                
+            }
+            .inputSection2 {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-around;
+                margin-top: 1em;
+            }
+            .myButton {
+                text-align: center;
+                margin: 1.5em 0;
+                button {
+                    padding: 0 1.3em;
+                    font-size: 1.8em;
+                    color: $white;
+                    background-color: $sweetGreen;
+                    border: none;
+                    border-radius: 8px;
+                    outline: none;
+                    
+                }
+                
+                #print {
+                    font-size: 1em;
+                    color: $sweetGreen;
+                    margin-top: 1em;
+                }
+            }
+            
+        }
+    }
+    
+    .innerText {
+        text-align: center;
+        background-color: $coolGrey;
+        padding: .5em 0;
+        font-size: 1.2em;
+        font-weight: 600;
+       h1 {
+            padding-top: 1em;
+            font-size: 1.5em;
+        }
+    }
+    .benefitCards{
+        display: flex;
+        justify-content: space-between;
+        margin: 4em 0;
+        .card {
+            width: 70%;
+            border-top: 2px solid $blacky;
+            background-color: $white;
+            margin: 0 1.5em;
+            padding: 1.5em 2em 1.5em 1.5em;
+            box-shadow: 0px 2px 2px gray, 
+            -2px 2px 2px gray, 2px 2px 2px gray;
+            ul {
+                margin: 1em 0 .8em 0;
+                li {
+                    margin: 1em 0;
+                    .fas {
+                        color: $checkMark;
+                        margin-right: .5em;
+                    }
+                }
+            }
+            .hr {
+                border-top: 1.3px solid rgba(238, 229, 229, 0.2);
+                margin-bottom: 1em;
+            }
+            #tm {
+                font-size: .5em;
+                margin-top: -20px;
+                margin-left: -4px;
+                font-weight: bold;
+            }
+        }
+    }
+    .footer {
+        background-color: $blacky;
+        .footerNav {
+            display: flex;
+            justify-content: flex-start;
+            margin: 1em 1em;
+            li {
+                color: $white;
+                margin: .5em 0.3em;
+            }
+            
+        }
+        .insuranceLogo {
+            text-align: right;
+            img {
+                text-align: center;
+                margin-right: 1.3em;
+            }
+        }
+        #pedro {
+            text-align: center;
+            color: $white;
+            padding-bottom: .5em;
+        }
+    }
+}
+

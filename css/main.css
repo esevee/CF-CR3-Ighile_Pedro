@@ -1,0 +1,269 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/*Global Starts*/
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #a89a9a;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  letter-spacing: -0.5px;
+  font-weight: bold;
+}
+
+/*Global Ends*/
+.logo-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #fff3f3;
+  padding: 1.5em 1.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-banner .logoBan img {
+    display: none;
+  }
+}
+
+.mainNav {
+  background-color: #8e1616;
+}
+
+.mainNav .navItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: .3em 1.2em;
+}
+
+.mainNav .navItems li {
+  margin: 0 1em;
+  font-size: 1.2em;
+}
+
+/*End of mainHeader and navbar*/
+.container {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.container .mainContent {
+  background-image: url("../img/traffic-332857_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 66vh;
+  position: relative;
+}
+
+.container .mainContent #carInsurance {
+  color: #fff;
+  font-size: 2.5em;
+  padding: 1em 0 .5em 1em;
+}
+
+.container .mainContent .innerContent {
+  margin: auto;
+  width: 90%;
+  height: 85%;
+  position: absolute;
+  top: 6.25em;
+  right: 5%;
+  border: 0.02em solid #3f3b3b;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+}
+
+@media only screen and (max-width: 768px) {
+  .container .mainContent .innerContent {
+    top: 130px;
+    right: 5%;
+  }
+}
+
+.container .mainContent .innerContent #quote {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .mainContent .innerContent #quote {
+    font-size: 1.5em;
+    margin-top: 1.3em;
+  }
+}
+
+.container .mainContent .innerContent .inputSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1em;
+}
+
+.container .mainContent .innerContent .inputSection2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1em;
+}
+
+.container .mainContent .innerContent .myButton {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.container .mainContent .innerContent .myButton button {
+  padding: 0 1.3em;
+  font-size: 1.8em;
+  color: #fff;
+  background-color: #339235;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.container .mainContent .innerContent .myButton #print {
+  font-size: 1em;
+  color: #339235;
+  margin-top: 1em;
+}
+
+.container .innerText {
+  text-align: center;
+  background-color: #cecece;
+  padding: .5em 0;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.container .innerText h1 {
+  padding-top: 1em;
+  font-size: 1.5em;
+}
+
+.container .benefitCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 4em 0;
+}
+
+.container .benefitCards .card {
+  width: 70%;
+  border-top: 2px solid #171717;
+  background-color: #fff;
+  margin: 0 1.5em;
+  padding: 1.5em 2em 1.5em 1.5em;
+  -webkit-box-shadow: 0px 2px 2px gray,  -2px 2px 2px gray, 2px 2px 2px gray;
+          box-shadow: 0px 2px 2px gray,  -2px 2px 2px gray, 2px 2px 2px gray;
+}
+
+.container .benefitCards .card ul {
+  margin: 1em 0 .8em 0;
+}
+
+.container .benefitCards .card ul li {
+  margin: 1em 0;
+}
+
+.container .benefitCards .card ul li .fas {
+  color: #90d3d5;
+  margin-right: .5em;
+}
+
+.container .benefitCards .card .hr {
+  border-top: 1.3px solid rgba(238, 229, 229, 0.2);
+  margin-bottom: 1em;
+}
+
+.container .benefitCards .card #tm {
+  font-size: .5em;
+  margin-top: -20px;
+  margin-left: -4px;
+  font-weight: bold;
+}
+
+.container .footer {
+  background-color: #171717;
+}
+
+.container .footer .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 1em 1em;
+}
+
+.container .footer .footerNav li {
+  color: #fff;
+  margin: .5em 0.3em;
+}
+
+.container .footer .insuranceLogo {
+  text-align: right;
+}
+
+.container .footer .insuranceLogo img {
+  text-align: center;
+  margin-right: 1.3em;
+}
+
+.container .footer #pedro {
+  text-align: center;
+  color: #fff;
+  padding-bottom: .5em;
+}
+/*# sourceMappingURL=main.css.map */

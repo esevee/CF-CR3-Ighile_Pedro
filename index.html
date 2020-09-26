@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a85443f449.js" crossorigin="anonymous"></script>
+    <title>Best Insurance</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mainHeader">
+            <div class="logo-banner">
+                <div class="logo-inv">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="logoBan">
+                    <img src="img/banner.png" alt="">
+                </div>
+            </div>
+            <div class="mainNav">
+                <ul class="navItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+        </div> <!--End of logo and navBar (mainHeader)-->
+        <div class="mainContent">
+            <h1 id="carInsurance">Car insurance</h1>
+            <div class="innerContent"> <!--innerContent here-->
+                <h1 id="quote">Great coverage begins <br>with a custom quote</h1>
+                <div class="inputSection">
+                    <div class="name">
+                        <label for="name">Your name:</label><br>
+                        <input id="name" style="height: 2em; width: 15em;" type="text">
+                    </div>
+                    <div class="age">
+                        <label for="age">Age:</label><br>
+                        <input id="age" style="height: 2em; width: 15em;" type="number">
+                    </div>
+                </div>
+                <div class="inputSection2">
+                    <div class="name">
+                        <label for="name">Country:</label><br>
+                        <select name="country" id="select" style="height: 2.5em; width: 15.5em;">
+                            <option value="Austria" id="austria">Austria</option>
+                            <option value="Hungary" id="hungary">Hungary</option>
+                            <option value="Greece" id="greece">Greece</option>
+                        </select>
+                    </div>
+                    <div class="age">
+                        <label>Horsepower of your car:</label><br>
+                        <input id="horse" style="height: 2em; width: 15em;" type="number" value="">
+                    </div>
+                </div>
+                <div class="myButton">
+                   <button onclick="calculateInsurance()" type="submit" value="submit" id="above">Calculate</button>
+                   <!-- <input type="submit" value="submit" id="above">-->
+                    <!-- <p id="result"></p> -->
+                    <p id="print">Printed calculation goes here</p>
+                </div>
+            </div>
+        </div>
+        <div class="innerText">
+            <h1>Un-complicating car coverage</h1>
+            <p>Understanding your coverage options shouldn't be so hard.</p>
+            <p>We'll guide you through available coverage types,</p>
+            <p>starting with who and what is covered.</p>
+        </div>
+        <div class="benefitCards">
+            <div class="card">
+                <h1>What comes standard</h1>
+                <p>The coverage you need</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> bodily injury Liability</li>
+                    <li><i class="fas fa-check"></i> Property Damage</li>
+                    <li><i class="fas fa-check"></i> Medical Payments</li>
+                </ul>
+                <div class="hr"></div>
+                <h4 class="benefit">Benefits</h4>
+                <p>12-month rate guarantee |24/7 customer</p>
+                <p>service | Lifetime Repair Guarantee</p>
+            </div>
+            <div class="card">
+                <h1>Add-On protection & coverage</h1>
+                <p>For more peace of mind</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Better Car replacement</li>
+                    <li><i class="fas fa-check"></i> Towing & Labor</li>
+                    <li><i class="fas fa-check"></i> Rental Car Coverage</li>
+                </ul>
+                <div class="hr"></div>
+                <h4 class="benefit">Earned Benefits</h4>
+                <p>Accident Forgiveness' | New Car</p>
+                <p>Replacement <span id="tm"><sup>TM</sup></span> </p>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <ul class="footerNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+            <div class="insuranceLogo">
+                <img src="img/logo-inv.png" alt="">
+            </div>
+            <div class="codeFactory">
+                <p id="pedro">Ighile Pedro - codeFactory 2018</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
